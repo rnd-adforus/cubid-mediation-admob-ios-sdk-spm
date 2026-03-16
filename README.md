@@ -1,0 +1,1 @@
+# uad-ios-sdk-spm
