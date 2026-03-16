@@ -1,4 +1,4 @@
-# uad-ios-sdk-spm
+# cubid-mediation-admob-ios-sdk-spm
 
 ### 📢 Notice
 현재 배포 방식을 CocoaPods에서 Swift Package Manager(SPM)로 전환하고 있습니다.<br>
