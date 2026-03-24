@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "UAdKit",
-            targets: ["UAdKit"]
+            targets: ["UAdKitTarget"]
         ),
     ],
     dependencies: [
