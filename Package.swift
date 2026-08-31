@@ -1,7 +1,7 @@
 // swift-tools-version:5.9
 import PackageDescription
 
-let versionInfo = "2.5.0"
+let versionInfo = "2.6.3"
 
 let package = Package(
     name: "UAdKit",
@@ -11,20 +11,20 @@ let package = Package(
     products: [
         .library(
             name: "UAdKit",
-            targets: ["UAdKitTarget"]
+            targets: ["UAdKitTarget", "UAdKitResources"]
         ),
     ],
     dependencies: [
         .package(
-          url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-          "12.4.0"..<"13.0.1"
+            url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+            "12.4.0"..<"13.6.0"
         )
     ],
     targets: [
         .binaryTarget(
             name: "UAdKit",
-            url: "https://nexus.adforus.com/repository/cubid_iOS/UAd/\(versionInfo)/UAdKit.xcframework.zip",
-            checksum: "2279b70a0e4cfc79d292101213913e6a1a3440084e7d32caaeaec9d2810ea452"
+            url: "https://nexus.adforus.com/repository/cubid_iOS/UAd/\(versionInfo)/UAdKit-SPM.zip",
+            checksum: "5349d395b1ffff2e00d59a8fec58f3fdde93e5ea8633d78d50c6373c26dc768f"
         ),
         .target(
             name: "UAdKitTarget",
@@ -34,5 +34,12 @@ let package = Package(
             ],
             path: "UAdKitTarget"
         ),
+        .target(
+            name: "UAdKitResources",
+            path: "Sources/UAdKitResources",
+            resources: [
+                .copy("UAdResources.bundle")
+            ]
+        )
     ]
 )
