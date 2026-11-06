@@ -1,7 +1,7 @@
 // swift-tools-version:5.9
 import PackageDescription
 
-let versionInfo = "2.6.3"
+let versionInfo = "2.7.0"
 
 let package = Package(
     name: "UAdKit",
@@ -24,7 +24,7 @@ let package = Package(
         .binaryTarget(
             name: "UAdKit",
             url: "https://nexus.adforus.com/repository/cubid_iOS/UAd/\(versionInfo)/UAdKit-SPM.zip",
-            checksum: "5349d395b1ffff2e00d59a8fec58f3fdde93e5ea8633d78d50c6373c26dc768f"
+            checksum: "86aa8ea8efb91cf2d7d8f8404328d34b365b3066852c3a96c9d07729c62af06b"
         ),
         .target(
             name: "UAdKitTarget",
